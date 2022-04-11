@@ -1,3 +1,5 @@
+from atexit import register
+from sqlite3 import register_adapter
 from flask import Flask
 import os
 
@@ -10,9 +12,8 @@ def create_app():
     )
 
     from.import portfolio
-
     app.register_blueprint(portfolio.bp)
-    
     return app
 
 
+  

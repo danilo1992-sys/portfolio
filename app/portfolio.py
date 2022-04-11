@@ -1,5 +1,5 @@
 from flask import (
-    Blueprint, current_app, redirect, render_template, request, url_for, redirect, current_app
+    Blueprint, current_app, redirect, render_template, request, url_for
 )
 import sendgrid
 from sendgrid.helpers.mail import *
@@ -8,7 +8,12 @@ bp = Blueprint('portfolio', __name__, url_prefix='/')
 
 @bp.route('/', methods=['GET'])
 def index ():
-        return render_template ('portfolio/index.html')
+    return render_template ('portfolio/index.html')
+        
+
+@bp.route('/',  methods=['GET'])
+def mi():
+    return render_template('portfolio/mi.html')
 
 @bp.route('/mail', methods=['GET','POST'])
 def mail():
