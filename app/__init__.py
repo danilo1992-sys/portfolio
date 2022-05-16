@@ -1,5 +1,3 @@
-from atexit import register
-from sqlite3 import register_adapter
 from flask import Flask
 import os
 

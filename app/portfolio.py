@@ -11,7 +11,7 @@ def index ():
     return render_template ('portfolio/index.html')
         
 
-@bp.route('/',  methods=['GET'])
+@bp.route('/sobre mi',  methods=['GET'])
 def mi():
     return render_template('portfolio/mi.html')
 

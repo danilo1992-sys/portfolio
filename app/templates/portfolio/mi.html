@@ -1,7 +1,72 @@
 {% extends 'base.html'%}
 
-<div class="logo">
+{% block title%}
+Sobre mi
+{% endblock %}
+
+{% block content%}
+<div class="hero">
     <div class="hero-content">
-        <div>hola mundo</div>
+        <div class="left">
+            <h1>Carta de presentación</h1>
+            <p>Un placer saludarlos. Me presento soy Danilo Caceres y me encuentro en la
+                búsqueda mi primera experiencia laboral en el ámbito de la informática. Soy un
+                apasionado del mundo de la informática, siempre tuve pasión, ganase de
+                crecer y de poder llegar a trabajar en este rubro, en el momento no cuento con
+                la experiencia, pero tengo muchas ganas de crecer como persona y como
+                profesional. Sin ninguna duda en esta empresa puedo aprender mucho y
+                aportar</p>
+        </div>
+            <div class="rigtht">
+                <img src="{{ url_for('static', filename='foto.png')}}" width="400px" /> 
+        </div>   
     </div>
 </div>
+<div class="center">
+    <div class="content">
+    <h1>Conoceme</h1>
+            <p>Soy de Montevideo Uruguay en el año 2018 despues de muchos alos de estudios autidacta decidi inscribirme en la carrera de tecnico en soporte de sistemas 
+                en el instituto tecnologico superior de Uruguay, en el año 2021 curse la ultima materia de la carrera, la materia cursada no formava parte del proyecto
+                de egreso. En el año 2020 realize el proyecto de egreso de la carrera junto a 3 compañieros mas el cual fue aprobado con una nota de 11 puntno de 12 posibles 
+            </p>
+            </div>  
+        </div>
+<div class="center">
+    <div class="content">
+            <h1>Mi experiencia</h1>
+            <p>Mi experiencia radica en mas de 10 años en reparacion y mantenimineto de equipos informaticos, instalacion de servidores, sistemas de cctv, soporte de manera remota 
+                y acesoria a usuarios al momento de adquiri algun tipo de dispositivo o servicio </p>
+        </div>
+    </div>
+    <div class="center">
+        <div class="content">
+            <h1>Hobies</h1>
+            <ul>
+                <li>Salir de camping</li>
+                <li>Mirar series</li>
+                <li>Salir con amigos</li>
+                <li>Jugar al futbol 5</li>
+                <li>Jugar a videojuegos</li>
+                <li>Mirar la Formula 1</li>
+                <li>Escucha musica</li>
+                <li>Cocinar</li>
+            </ul>
+        </div>
+    </div>
+        <div class="center padded">
+                <div class="content padded">
+                        <div class="padded">
+                            <h1>Mis certificaciones</h1>
+                        </div>
+               
+                <div class="row">
+                    <div class="card third">
+                        <h3>Certificado de programacion web en python</h3>
+                        <p>Certificado obtenido en el año 2022 de programacion web con Python y Flask 
+                        en la academia Udemy</p>
+                        <a class="orange" target="_blank" href="¨{{url_for('static',filename='certificado.pdf')}}">Link aqui</a>
+                    </div>
+                </div>
+
+
+{% endblock %}
