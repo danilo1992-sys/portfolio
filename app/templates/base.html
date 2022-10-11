@@ -14,8 +14,9 @@
         <nav>
             <ul>
                 <li><a href="{{ url_for('portfolio.index')}}">Iinicio</a></li>
-                <li><a href="{{ url_for('portfolio.mi')}}">Sobre mi</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a class="orange" href="{{url_for('static', filename='curriculum vitae danilo caceres.pdf')}}"> curriculum </a></li>
+                <li><a href="{{ url_for('portfolio.mi')}}">Sobre mi</a></li>  
+                <a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>

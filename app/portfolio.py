@@ -10,7 +10,6 @@ bp = Blueprint('portfolio', __name__, url_prefix='/')
 def index ():
     return render_template ('portfolio/index.html')
         
-
 @bp.route('/sobre mi',  methods=['GET'])
 def mi():
     return render_template('portfolio/mi.html')
